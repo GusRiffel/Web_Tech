@@ -1,0 +1,9 @@
+*{
+  font-weight: bold;
+}
+
+#custdetails label{
+  text-align: left;
+  width: 80px;
+  display: inline-block;
+}

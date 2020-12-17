@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#left{
+  width: 20%;
+  height: 10vh;
+  background: red;
+  float: left;
+}
+
+#middle{
+  width: 60%;
+  height: 10vh;
+  background: yellow;
+  float: left;
+}
+
+#right{
+  width: 20%;
+  height: 10vh;
+  background: blue;
+  float: left;
+}
+
+span{
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: Segoe UI;
+  color: white;
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 700px){
+  #left{
+    width: 100%;
+    background: red;
+  }
+  
+  #middle{
+    width: 100%;
+    background: white;
+  }
+  
+  #right{
+    width: 100%;
+    background: blue;
+  }
+
+  span::after{
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: Segoe UI;
+    color: black;
+    margin-left: 10%;
+    content: "Now is Netherland!";
+  }
+}

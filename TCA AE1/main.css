@@ -1,0 +1,160 @@
+*{
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+body{
+  background-color: blanchedalmond;
+}
+
+#wrapper{
+  margin-top: -0.5%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cadetblue;
+}
+
+#sec1, #sec2, #sec3, #sec4, #contact{
+  background-color: goldenrod;
+  border-radius: 5%;
+}
+
+#list{
+  list-style-type: none;
+  text-align: center;
+}
+
+#list li{
+  display: inline-block;
+}
+
+#list li a{
+  text-decoration: none;
+  color: black;
+}
+
+#sec1{
+  float: left;
+  width: 42%;
+  margin-left: 5%;
+}
+
+#sec2{
+  float: right;
+  width: 42%;
+  margin-right: 5%;
+}
+
+#sec3{
+  float: left;
+  width: 42%;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+#sec4{
+  float: right;
+  width: 42%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+}
+
+#contact{
+  float: left;
+  width: 42%;
+  margin-left: 28%;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+}
+
+#details label{
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+  margin-left: 25%;
+}
+
+#details textarea{
+  height: 5vh;
+  width: 50%;
+  font-weight: bolder;
+  margin-left: 25%;
+}
+
+#details button{
+  margin-left: 35%;
+  border: none;
+  border-radius: 5%;
+  width: 30%;
+  font-size: 17px;
+  transition: 0.5s;
+  margin-bottom: 1%;
+}
+
+#details button:hover{
+  background-color: cornflowerblue;
+}
+
+
+#footer{
+  text-align: center;
+  clear: both;
+}
+
+@media only screen and (max-width: 400px) {
+
+  #sec1{
+    width: 90%;
+  }
+  
+  #sec2{
+    width: 90%;
+    margin-top: 2.5%;
+  }
+  
+  #sec3{
+    width: 90%;
+    margin-top: 2.5%;
+  }
+  
+  #sec4{
+    width: 90%;
+    margin-top: 2.5%;
+  }
+  
+  #contact{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+  }
+  
+  #details label{
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    margin-left: 0%;
+  }
+  
+  #details textarea{
+    height: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    font-weight: bolder;
+  }
+  
+  #details button{
+    border: none;
+    border-radius: 5%;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 17px;
+    transition: 0.5s;
+    margin-bottom: 1%;
+  }
+}

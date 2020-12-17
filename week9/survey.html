@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Survey</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div>
+
+    <a href="index.html" id="home">Home</a>
+    <a href="survey.html" id="Survey">Survey Form</a>
+
+    <form action="#" name="userSurvey" onsubmit="validAll()">
+      <h2>User Survey</h2>
+      <hr><br>
+      <span id="span1">User Information:</span><br>
+      <span>Please enter details below:</span><br><br>
+
+      <label for="userName">Name (required): </label><input type="text" name="userName" id="userName">
+      <br><br>
+      <label for="email">Email (required): </label><input type="email" name="eMail" id="email">
+      <br><br>
+      <label for="phone">Phone (required): </label><input type="tel" name="phone" id="phone">
+      <br><br>
+      <hr>
+
+      <p>Please choose your favorite types of books.(check all that apply)</p>
+      <input type="checkbox" id="science_fiction" name="bookChoice0"><label for="science_fiction">Science Fiction</label>
+      <input type="checkbox" id="travel_guide" name="bookChoice1"><label for="travel_guide">Travel Guide</label>
+      <input type="checkbox" id="short_story" name="bookChoice2"><label for="short_story">Short Story Collection</label>
+      <input type="checkbox" id="other" name="bookChoice3"><label for="other">Other</label>
+      <br><br>
+
+      <textarea name="comments" id="text_area" cols="55" rows="10"></textarea>
+      <br><br>
+
+      <button type="submit" id="submit_button">Submit</button>
+      <button type="reset" id="reset_button">Reset Form</button>
+    </form>
+  </div>
+</body>
+</html>

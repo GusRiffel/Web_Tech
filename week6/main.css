@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#wrapper{
+  width: 920px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+#header{
+  height: 20%;
+  padding-top: 5%;
+  background-color: blanchedalmond;
+}
+
+#header ul{
+  list-style-type: none;
+}
+
+#header li{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#header a{
+  text-decoration: none;
+  color: black;
+}
+
+#main_section{
+  height: 70%;
+  background-color: honeydew;
+}
+
+#maintitle{
+  margin-top: -4%;
+}
+
+#about_me{
+  width: 50%;
+  float: left;
+  margin-top: 3%;
+  background-color: khaki;
+}
+
+#background{
+  width: 50%;
+  float: left;
+  margin-top: 3%;
+  background-color: lightcoral;
+}
+
+table{
+  margin-top: 3%;
+}
+
+table,td{
+  border: 1px solid black;
+  height: 25%;
+}
+
+#table{
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.skill{
+  font-weight: bold;
+  color: red;
+}
+
+#firstrow{
+  background: rosybrown;
+}
+
+#secondrow{
+  background: seagreen;
+}
+
+#thirdrow{
+  background: slateblue;
+}
+
+#footer{
+  height: 12%;
+  padding-top: 7%;
+  background-color: lightpink;
+}
+
+@media only screen and (max-width: 400px) {
+
+  html, body{
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  #wrapper{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+  #header li{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #main_section{
+    height: 75%;
+  }
+
+  #about_me{
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #background{
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+  #table{
+    width: 60%;
+  }
+}
+

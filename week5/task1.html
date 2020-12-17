@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task1.css">
+  <title>Student Survey</title>
+</head>
+<body>
+  <div>
+    <h1>Student Survey</h1>
+    <form action="google.com">
+
+      <div id="custdetails">
+        <label for="name">Name*: </label><input type="text" name="name" id="name" required><br><br>
+        <label for="email">Email*: </label><input type="email" name="email" id="email" required><br><br>
+        <label for="number">Number*: </label><input type="text" name="number" id="number"><br><br>
+      </div>
+
+      <div>
+        <label for="year">What year are you in*: </label>
+          <select name="year" id="year" required>
+            <option value="">Select</option>
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="4th">4th</option>
+          </select>
+      </div><br>
+
+      <div>  
+        <p for="electronic_devices">Which devices do you use?</p><br>
+          <input type="checkbox" name="electronic_devices" id="Computer"><label for="Computer">Computer</label><br>
+          <input type="checkbox" name="electronic_devices" id="Ebookreader"><label for="Ebookreader">Ebook reader</label><br>
+          <input type="checkbox" name="electronic_devices" id="Smartphone"><label for="Smartphone">Smart phone</label><br><br>
+        
+        <p for="hours">How many hours a day do you spend using electronic devices?</p><br> 
+          <input type="radio" name="hours" id="1hour"><label for="1hour">1 Hour</label><br>
+          <input type="radio" name="hours" id="2hour"><label for="2hour">2 Hours</label><br>
+          <input type="radio" name="hours" id="3hour"><label for="3hour">3 Hours +</label><br><br>
+      </div>
+
+      <div>
+        <p for="furthercomments">Any other comments</p><br><br>
+        <textarea name="furthercomments"></textarea><br><br>
+        <button name="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

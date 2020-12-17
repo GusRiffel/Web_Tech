@@ -1,0 +1,99 @@
+ /* setting with for a better layout organization with flex box */
+#help{
+  width: 100%;
+  color: white;
+  margin-top: 5%;
+}
+
+#help h1{
+  text-align: center;
+}
+
+#help h3{
+  margin-top: 5%;
+}
+
+ /* setting the size of the pictures and adding rounded corners */
+.help_fig_size{
+  height: 300px;
+  width: 300px;
+  border-radius: 2%;
+}
+
+#helpfigures{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+ /* setting our image as relative so we can show our message when hovered */
+.imgcointainer{
+  position: relative;
+}
+
+ /* image properties and using the transition to create the animation effect */
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+  /* how the text is going to appear and the position */
+.textfade {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgcointainer:hover .image {
+  opacity: 0.3;
+}
+
+.imgcointainer:hover .textfade {
+  opacity: 1;
+}
+
+ /* the box surrounding the text */
+.text {
+  background-color: #6b93c7;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 2%;
+}
+
+/* Css for reponsiveness smaller desktops */
+
+@media only screen and (max-width: 1024px){
+  #help h3{
+    margin-left: 5%;
+  }
+}
+
+/* Css for reponsiveness mobile*/
+
+@media only screen and (max-width: 480px){
+  .help_fig_size{
+    height: 150px;
+    width: 300px;
+    border-radius: 2%;
+  }
+
+  #helpfigures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    height: 60vh;
+  }
+
+  #help h3{
+    font-weight: 500;
+  }
+
+}

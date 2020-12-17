@@ -1,0 +1,9 @@
+fieldset label{
+  text-align: left;
+  display: inline-block;
+  width: 210px;
+}
+
+#congrats{
+  display: none;
+}

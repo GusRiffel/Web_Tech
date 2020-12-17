@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Covid-Awareness</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/help.css">
+  <script src="../script.js"></script>
+</head>
+<body>
+  <div id="wrapper"> <!-- Used to wrap our 3 main divs and apply flex box properties -->
+      <aside class="staySafe"><h1>STAY SAFE</h1></aside> <!-- Column stay on the left side of the page -->
+      <div id="content"> <!-- Used to display all of content -->
+        <header id="header">
+          <h1>COVID-19</h1>
+          <ul id="list"> <!-- Create the navigation using list -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="symptoms.html">Symptoms</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+        </header>
+      
+        <section id="help">
+          <h1>Need further help?</h1>
+          <h3>For more details and guidance please visit the official NHS or goverment website by clicking on the images below:</h3>
+
+          <div id="helpfigures"> <!-- Used to manipulate our two images with flex-box -->
+
+            <div class="imgcointainer"> <!-- Class used to set the position as relative so we can create the effect on hover -->
+              <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/" target="_blank"> <!-- Link with _blank to open a new tab when clicked -->
+                <img class="help_fig_size image" src="../assets/nhs.png" alt="nhs_logo">
+                <div class="textfade"> <!--Used to give the effect on our text and make it apper on top of the image -->
+                  <div class="text">Click to visit the official NHS website for more guidance.</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="imgcointainer">
+              <a href="https://www.gov.uk/coronavirus?gclid=CjwKCAiA_eb-BRB2EiwAGBnXXhK6QkSYJRpXDAO_426sPh7RXsBPtgJJh6H9JFwGWScxX8rYiJG2bRoCLRMQAvD_BwE" target="_blank">
+                <img class="help_fig_size image" src="../assets/gov.jpg" alt="govUK_logo">
+                <div class="textfade">
+                  <div class="text">Click to visit the official GOV.UK website for more guidance.</div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </section>
+      
+      </div>
+      <aside class="staySafe"><h1>STAY SAFE</h1></aside> <!-- Column stay on the left right of the page -->
+  </div>
+</body>
+</html>

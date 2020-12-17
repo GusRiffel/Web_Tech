@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');   /* importing font from google */
+
+ /* This css is shared with all of the pages */
+
+ /* setting start config of the page */
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #37a794;
+}
+
+ /* display three columns with stay safe - content - stay safe */
+#wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* organize our content in column direction and centralize it */
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  color: white;
+}
+
+ /* removing pre-built style from list */
+#list{
+  list-style: none;
+  display: flex;
+  margin-top: 3%;
+}
+
+ /* create a space in between the li and keep it symmetrical at the same time */
+#list li:not(:last-child){
+  margin-right: 150px;
+}
+
+ /* removing the link style and giving transition time for the hover effect */
+#list li a{
+  text-decoration: none;
+  transition: 0.2s;
+  color: white;
+}
+
+ /* removing the default colour used after visiting the link */
+#list li a:visited{
+  color: white;
+}
+
+ /* colour when the user hover over the link */
+#list li a:hover{
+  color: #dd6b7f;
+}
+
+ /* Columns on left and right side, making it write vertically and setting colours */
+.staySafe{
+  display: flex;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  justify-content: center;
+  padding: 4%;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #e4dcdc;
+  color: #2A7E6F;
+  height: 100vh;
+}
+
+/* Css for reponsiveness smaller desktops*/
+
+@media only screen and (max-width: 1024px){
+  #list li:not(:last-child){
+    margin-right: 120px;
+  }
+}
+
+/* Css for reponsiveness mobile*/
+
+@media only screen and (max-width: 480px){
+  .staySafe{
+    padding: 1%;
+    font-size: 20px;
+  }
+
+  #list li:not(:last-child){
+    margin-right: 20px;
+  }
+
+  header h1{
+    margin-top: 5%;
+  }
+
+  #list{
+    margin-top: 8%;
+  }
+}

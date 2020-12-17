@@ -1,0 +1,60 @@
+article{
+  margin-top: 2%;
+  color: white;
+}
+
+article h1{
+  text-align: center;
+}
+
+article ul{
+  margin-top: 2%;
+}
+
+/* using flex to display the items vertically */
+#symptoms{
+  display: flex;
+  flex-direction: column;
+  margin-left: 17%;
+  width: 70%;
+}
+
+#sympVideo{
+  display: flex;
+  flex-direction: column;
+}
+
+#sympVideo span{
+  color: white;
+  margin-left: -1%;
+}
+
+/* rounding the corners of the video */
+video {
+  border-radius: 3%;
+}
+
+/* Css for reponsiveness smaller desktops */
+
+@media only screen and (max-width: 1024px){
+  #sympVideo span{
+    width: 75%;
+    margin-left: 5%;
+  }
+  
+  #sympVideo{
+    align-items: center;
+  }
+  
+  video {
+    width: 500px;
+  }
+}
+
+/* Css for reponsiveness mobile*/
+
+@media only screen and (max-width: 480px){
+  video {
+    width: 350px;
+  }
+}

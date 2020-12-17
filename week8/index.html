@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./calc.js"></script>
+</head>
+<body>
+  <h2>Grade Calculator</h2>
+
+  <fieldset>
+    <legend>Enter your scores for each module</legend>
+
+    <label for="score1">Foundation Computing</label>
+    <input id="score1" type="text"> <br><br>
+    
+    <label for="score2">Object-oriented programming</label>
+    <input id="score2" type="text"> <br><br>
+    
+    <label for="score3">Cyber Security</label>
+    <input id="score3" type="text"> <br><br>
+    
+    <label for="score4">Networking</label>
+    <input id="score4" type="text"> <br><br>
+    
+    <label for="score5">Datebases</label>
+    <input id="score5" type="text"> <br><br>
+
+    <button onclick="calculateAverage()">Calculate average</button>
+  </fieldset>
+  <p id="result"></p>
+  <img id="img" src="">
+</body>
+</html>

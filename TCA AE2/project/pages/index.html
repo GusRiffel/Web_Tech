@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-Awareness</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+  <div id="wrapper"> <!-- Used to wrap our 3 main divs and apply flex box properties -->
+    <aside class="staySafe"><h1>STAY SAFE</h1></aside> <!-- Column stay on the left side of the page -->
+      <div id="content">
+        <header id="header">
+          <h1>COVID-19</h1>
+          <ul id="list"> <!-- Create the navigation using list -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="symptoms.html">Symptoms</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+        </header>
+      
+        <section class="slide-show"> <!-- Main div covering our images used to create our slide -->
+
+          <div class="slide fade"> <!-- each image have its own div -->
+            <a href="https://www.worldometers.info/coronavirus/?utm_campaign=homeAdvegas1?" target="_blank"> <!-- link telling where to go when clicked -->
+              <img src="../Assets/Image1.png" alt="covid_cell"> <!-- img used at the moment -->
+              <div class="text">Live statistics update</div> <!-- Text to clarify where that image will take you when clicked -->
+            </a>
+          </div>
+
+          <div class="slide fade">
+            <a href="symptoms.html">
+              <img src="../Assets/Image3.png" alt="person_sick">
+              <div class="text">Find out what are the symptoms of COVID-19</div>
+            </a>
+          </div>
+
+          <div class="slide fade">
+            <a href="prevention.html">
+              <img src="../Assets/Image2.png" alt="using_sanitizer">
+              <div class="text">Know how to protect youreself</div>
+            </a>
+          </div>
+
+          <div class="slide fade">
+            <a href="help.html">
+              <img src="../Assets/Image4.png" alt="doctor_help">
+              <div class="text">Need more advice and instructions?</div>
+            </a>
+          </div>
+
+          <div id="arrows"> <!-- Arrows used to change image  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- calling funcion to change the image passing and index  -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- the numbers are the code for the arrow icon  -->
+          </div>
+
+          <div style="text-align:center"> <!-- Style applied inline to centralize the dots  -->
+            <span class="dot" onclick="currentSlide(1)"></span> <!-- dots used as another option to navigate between images  -->
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          
+        </section> <!-- end of the slide  -->
+      
+        <article>
+          <h1>Coronavirus</h1>
+          <p>
+            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. It is currently affecting 218 countries and territories around the world and 2 international conveyances. Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more serious diseases such as Severe Acute Respiratory Syndrome (SARS-CoV).
+            The 2019 novel coronavirus is a new strain that has not been seen in humans until now and has caused viral pneumonia. It was first linked to Wuhan’s South China Seafood City market which is a wholesale market for seafood and live animals in December 2019.
+          </p>
+        </article>
+      </div>
+    <aside class="staySafe"><h1>STAY SAFE</h1></aside> <!-- Column stay on the right side of the page -->
+  </div>
+
+  <script src="../script.js"></script> <!-- script import as the last thing so it gives the DOM time to load before the js function starts -->
+</body>
+</html>

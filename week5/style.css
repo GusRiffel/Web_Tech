@@ -1,0 +1,27 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#payment{
+  display: inline;
+}
+
+textarea{
+  height: 5vh;
+  width: 50%;
+  font-weight: bolder;
+}
+
+#customerInf label{
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+}
+
+fieldset{
+  width: 600px;
+  border-radius: 10px;
+}
+
